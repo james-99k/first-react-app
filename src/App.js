@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import NavHeader from './Components/Header/navHeader.js'
+import Card from './Components/Main/card.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <NavHeader />
+    <div className="cardContainer">
+    <Card product="iphone 6" price="$499" discountedPrice="$599"/>
+    <Card product="iphone 7" price="$599" discountedPrice="$699"/>
+    <Card product="iphone 9" price="$699" discountedPrice="$799"/>
+    <Card product="iphone 10" price="$799" discountedPrice="$899"/>
+    </div>
     </div>
   );
 }
