@@ -1,0 +1,148 @@
+// colors
+$white: #FFFFFF;
+$aliceBlue: #F6F7F8;
+$buttercup: #2E90E5;
+$raisinBlack: #262626;
+$blueCharcoal: #22262A;
+$radicalRed: #FF4858;
+$heliotrope: #8F65FF;
+$wildWatermelon: #FF6875;
+$spindle: #C1C8CE;
+$sirocco: #5D656B;
+$dodgerBlue: #33A0FF;
+$whisper: #E5E5E5;
+$silver: #BDBDBD;
+$tangerin: #E59703;
+$purple0: #5457BB;
+$victoria: #494CA3;
+$amber: #FFC000;
+$whiteSmoke: #F1F1F1;
+$curiousBlue: #3284AE;
+$blue0: #3CA9C7;
+$purle1: #5870BE;
+$red0: #E63737;
+$balticSea: #353A40;
+$yellow0: #ECD345;
+$deepSkyBlue: #03A9F4;
+$BdazzledBlue: #385C8E;
+$goldenPoppy: #FFC600;
+$red1: #FD2E2E;
+$darkCharcoal: #2E2E2E;
+$ghostWhite: #FAFAFB;
+$black: #000000;
+
+.card {
+    position: relative;
+    flex: 1;
+    max-width: 200px;
+    height: 270px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $spindle;
+
+    &__image {
+        padding-left: 5px;
+        height: 123px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .product-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .heart {
+            
+            * {
+                height: 30px;
+                width: 30px;
+                color: $dodgerBlue;
+                border: 1px solid $dodgerBlue;
+                border-radius: 50%;
+                padding-top: 7px;
+                text-align: center;
+                margin: 0 10px;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        .cart {
+            *{
+                height: 30px;
+                width: 30px;
+                color: $dodgerBlue;
+                border: 1px solid $dodgerBlue;
+                border-radius: 50%;
+                padding-top: 7px;
+                text-align: center;
+                margin: 0 10px;
+                opacity: 0;
+                visibility: hidden; 
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        color: $raisinBlack;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        height: 10px;
+
+        &--yellow {
+            color: $goldenPoppy;
+        }
+
+        &--gray {
+            color: $spindle;
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 16px;
+
+        &--discounted {
+            color: $radicalRed;
+        }
+
+        &--original {
+            margin-left: 15px;
+            color: $spindle;
+            text-decoration: line-through;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        
+        .heart {
+            *{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .cart {
+            *{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
