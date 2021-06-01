@@ -1,6 +1,8 @@
 import React from 'react'
 import './featuredProduct.scss'
 import product from './goPro.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function featuredProduct(props) {
     return (
@@ -13,11 +15,11 @@ function featuredProduct(props) {
                     {props.product}
                 </div>
                 <div class="rating">
-                    <i class="fas fa-star card__rating--yellow"></i>
-                    <i class="fas fa-star card__rating--yellow"></i>
-                    <i class="fas fa-star card__rating--yellow"></i>
-                    <i class="fas fa-star card__rating--yellow"></i>
-                    <i class="fas fa-star card__rating--gray"></i>
+                    <FontAwesomeIcon className="star" icon={faStar} />
+                    <FontAwesomeIcon className="star" icon={faStar} />
+                    <FontAwesomeIcon className="star" icon={faStar} />
+                    <FontAwesomeIcon className="star" icon={faStar} />
+                    <FontAwesomeIcon className="star" icon={faStar} />
                 </div>
                 <div class="price">
                     <div class="price-discounted">

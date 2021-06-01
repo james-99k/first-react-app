@@ -2,9 +2,7 @@ import React from 'react'
 import './card.scss'
 import Macbook from './50061505_575246.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function card(props) {
     return (
