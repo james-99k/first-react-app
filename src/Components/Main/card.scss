@@ -44,41 +44,45 @@ $black: #000000;
         padding-left: 5px;
         height: 123px;
         width: 100%;
-        //background-image: url("images/macbook.png");
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .image {
+        .product-img {
             height: 100%;
             width: 100%;
         }
 
         .heart {
-            height: 30px;
-            width: 30px;
-            color: $dodgerBlue;
-            border: 1px solid $dodgerBlue;
-            border-radius: 50%;
-            padding-top: 7px;
-            text-align: center;
-            margin: 0 10px;
-            opacity: 0;
-            visibility: hidden;
+            
+            * {
+                height: 30px;
+                width: 30px;
+                color: $dodgerBlue;
+                border: 1px solid $dodgerBlue;
+                border-radius: 50%;
+                padding-top: 7px;
+                text-align: center;
+                margin: 0 10px;
+                opacity: 0;
+                visibility: hidden;
+            }
         }
         
         .cart {
-            height: 30px;
-            width: 30px;
-            color: $dodgerBlue;
-            border: 1px solid $dodgerBlue;
-            border-radius: 50%;
-            padding-top: 7px;
-            text-align: center;
-            margin: 0 10px;
-            opacity: 0;
-            visibility: hidden;
+            *{
+                height: 30px;
+                width: 30px;
+                color: $dodgerBlue;
+                border: 1px solid $dodgerBlue;
+                border-radius: 50%;
+                padding-top: 7px;
+                text-align: center;
+                margin: 0 10px;
+                opacity: 0;
+                visibility: hidden; 
+            }
         }
     }
 
@@ -128,13 +132,17 @@ $black: #000000;
         opacity: 0.5;
         
         .heart {
-            opacity: 1;
-            visibility: visible;
+            *{
+                opacity: 1;
+                visibility: visible;
+            }
         }
 
         .cart {
-            opacity: 1;
-            visibility: visible;
+            *{
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 }
