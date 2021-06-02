@@ -1,0 +1,24 @@
+$spindle: #C1C8CE;
+
+.availability {
+    display: flex;
+    padding: 10px 0;
+
+    h5 {
+        padding-right: 40px;
+    }
+}
+
+.category {
+    display: flex;
+    padding: 10px 0;
+
+    h5 {
+        padding-right: 50px;
+    }
+}
+
+.shipping {
+    padding: 10px 0;
+    border-bottom: 1px solid $spindle;
+}

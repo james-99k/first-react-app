@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.e80ac332.chunk.css",
-    "main.js": "/static/js/main.8e9e4e0b.chunk.js",
-    "main.js.map": "/static/js/main.8e9e4e0b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b991c046.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b991c046.js.map",
-    "static/js/2.30232ea3.chunk.js": "/static/js/2.30232ea3.chunk.js",
-    "static/js/2.30232ea3.chunk.js.map": "/static/js/2.30232ea3.chunk.js.map",
-    "static/js/3.4b1c0361.chunk.js": "/static/js/3.4b1c0361.chunk.js",
-    "static/js/3.4b1c0361.chunk.js.map": "/static/js/3.4b1c0361.chunk.js.map",
+    "main.css": "/static/css/main.4bb0b207.chunk.css",
+    "main.js": "/static/js/main.b56d94bf.chunk.js",
+    "main.js.map": "/static/js/main.b56d94bf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f86d84f7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f86d84f7.js.map",
+    "static/js/2.05b57bc8.chunk.js": "/static/js/2.05b57bc8.chunk.js",
+    "static/js/2.05b57bc8.chunk.js.map": "/static/js/2.05b57bc8.chunk.js.map",
+    "static/js/3.680028be.chunk.js": "/static/js/3.680028be.chunk.js",
+    "static/js/3.680028be.chunk.js.map": "/static/js/3.680028be.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e80ac332.chunk.css.map": "/static/css/main.e80ac332.chunk.css.map",
-    "static/js/2.30232ea3.chunk.js.LICENSE.txt": "/static/js/2.30232ea3.chunk.js.LICENSE.txt",
+    "static/css/main.4bb0b207.chunk.css.map": "/static/css/main.4bb0b207.chunk.css.map",
+    "static/js/2.05b57bc8.chunk.js.LICENSE.txt": "/static/js/2.05b57bc8.chunk.js.LICENSE.txt",
     "static/media/50061505_575246.682e8303.png": "/static/media/50061505_575246.682e8303.png",
     "static/media/Oculus-Rift.11f57019.png": "/static/media/Oculus-Rift.11f57019.png",
     "static/media/Rectangle-1.f9c2fbd0.png": "/static/media/Rectangle-1.f9c2fbd0.png",
+    "static/media/beats.8e4c1e36.png": "/static/media/beats.8e4c1e36.png",
     "static/media/goPro.5657dea9.png": "/static/media/goPro.5657dea9.png",
     "static/media/iPhone-3.fba26d95.png": "/static/media/iPhone-3.fba26d95.png",
     "static/media/iphone1.ddc19758.png": "/static/media/iphone1.ddc19758.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b991c046.js",
-    "static/js/2.30232ea3.chunk.js",
-    "static/css/main.e80ac332.chunk.css",
-    "static/js/main.8e9e4e0b.chunk.js"
+    "static/js/runtime-main.f86d84f7.js",
+    "static/js/2.05b57bc8.chunk.js",
+    "static/css/main.4bb0b207.chunk.css",
+    "static/js/main.b56d94bf.chunk.js"
   ]
 }

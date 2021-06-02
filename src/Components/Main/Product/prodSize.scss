@@ -1,0 +1,64 @@
+$white: #FFFFFF;
+$radicalRed: #FF4858;
+$spindle: #C1C8CE;
+
+.size {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $spindle;
+
+    h5 {
+        padding-right: 70px;
+    }
+
+    .dropdown {
+        padding: 5px 5px;
+        border: 1px solid $spindle;
+
+        i {
+            padding-left: 20px;
+        }
+    }
+
+    .dropdown__options {
+        margin-right: 10px;
+
+        ul {     
+            padding: 5px 0;  
+            margin: 0;
+        }
+
+        &--tab{
+            text-align: center;
+            padding: 5px 18px;
+            background: $white;
+            border: 1px solid $spindle;
+            
+            &:hover {
+                cursor: pointer;
+                border: 1px solid $radicalRed;
+            }
+        }
+    }
+
+    a {    
+        display:block;
+        text-decoration: none;
+    }   
+
+    li {    
+        display:block;
+
+        ul {
+            display:none;
+            position:absolute;
+            z-index:1;
+
+        }
+
+        &:hover ul {    
+            display:block;    
+        }  
+    } 
+}

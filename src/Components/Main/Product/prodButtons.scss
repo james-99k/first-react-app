@@ -1,0 +1,133 @@
+$white: #FFFFFF;
+$spindle: #C1C8CE;
+$dodgerBlue: #33A0FF;
+
+.buttons {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $spindle;
+
+    &__left {
+        border-radius: 6px;
+        background: #cee5faf6;
+        display: flex;
+
+        .count {
+            display: flex;
+
+            button {
+                border: none;
+                background: none;
+            }
+
+            .minus {
+                padding: 10px 5px;
+                height: 100%;
+
+                .icon *{
+                    color: $dodgerBlue;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+
+                    .icon *{
+                        color: #cee5faf6;
+                    }
+                }
+            }
+    
+            .quantity {
+                background: $white;
+                padding: 5px 10px;
+                width: 40px;
+                text-align: center;
+                border: 4px solid #cee5faf6;
+                
+                &::-webkit-inner-spin-button,
+                ::-webkit-outer-spin-button {
+                    appearance: none;
+                }
+            }
+    
+            .plus {
+                padding: 10px 5px;
+                height: 100%;
+                color: $dodgerBlue;
+    
+                .icon *{
+                    color: $dodgerBlue;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+
+                    .icon *{
+                        color: #cee5faf6;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        width: 190px;
+        justify-content: space-between;
+
+        .add-to-cart {
+            padding: 10px 10px;
+            border-radius: 6px;
+            background: #cee5faf6;
+
+            .cart * {
+                color: $dodgerBlue;
+            }
+
+            span {
+                padding-left: 10px;
+                color: $dodgerBlue;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: $dodgerBlue;
+
+                .cart * {
+                    color: #cee5faf6;
+                }
+
+                span {
+                    color: #cee5faf6;
+                }
+            }
+        }
+
+        .favorite {
+            padding: 10px 10px;
+            border-radius: 6px;
+            background: #cee5faf6;
+            color: $dodgerBlue;
+
+            .heart * {
+                color: $dodgerBlue;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: $dodgerBlue;
+
+                .heart * {
+                    color: #cee5faf6;
+                }
+            }
+        }
+    }
+}

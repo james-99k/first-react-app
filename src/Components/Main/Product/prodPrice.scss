@@ -1,0 +1,18 @@
+$radicalRed: #FF4858;
+$spindle: #C1C8CE;
+
+.price {
+    display: flex;
+    padding: 10px 0;
+    font-size: 25px;
+
+    .discounted {
+        color: $radicalRed;
+    }
+
+    .original {
+        padding: 0 10px;
+        color: $spindle;
+        text-decoration: line-through;
+    }
+}
