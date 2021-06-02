@@ -1,0 +1,27 @@
+$spindle: #C1C8CE;
+
+.top__product {
+
+    .product {
+
+        &__image {
+            height: 200px;
+            width: 260px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .set {
+            padding: 10px 0;
+            height: 80px;
+
+            img {
+                height: 100%;
+                border: 1px solid $spindle;
+            }
+        }
+    }
+}
