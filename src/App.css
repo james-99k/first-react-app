@@ -49,3 +49,11 @@ h2 {
   justify-content: center;
   padding: 10px 0;
 }
+
+.container-product {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+  border: 1px solid black;
+}
