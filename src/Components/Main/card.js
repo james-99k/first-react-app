@@ -8,10 +8,13 @@ function card(props) {
     return (
         <div>
             <div className="card" onclick="location.href='product-page.html'">
-                <div className="card__image">
-                    <img className="product-img" src={Macbook} alt="Logo" />
-                    {/* <FontAwesomeIcon className="heart" icon={faHeart} />
-                    <FontAwesomeIcon className="cart" icon={faShoppingCart} /> */}
+                <div className="card__top">
+                    <div className="card__top--hot"><p>{props.hot}</p></div>
+                    <div className="card__top--image">
+                        <img className="product-img" src={Macbook} alt="Logo" />
+                        {/* <FontAwesomeIcon className="heart" icon={faHeart} />
+                        <FontAwesomeIcon className="cart" icon={faShoppingCart} /> */}
+                    </div>
                 </div>
                 <div className="card__title">
                     {props.product}
@@ -21,7 +24,7 @@ function card(props) {
                     <FontAwesomeIcon className="star" icon={faStar} />
                     <FontAwesomeIcon className="star" icon={faStar} />
                     <FontAwesomeIcon className="star" icon={faStar} />
-                    <FontAwesomeIcon className="star" icon={faStar} />
+                    <FontAwesomeIcon className="star gray" icon={faStar} />
                 </div>
                 <div className="card__price">
                     <div className="card__price--discounted">

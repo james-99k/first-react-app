@@ -35,8 +35,8 @@ function App() {
       <Ad />
       <Best />
       <div className="container">
-        <Card product="iphone 6" price="$499" discountedPrice="$599" />
-        <Card product="iphone 7" price="$599" discountedPrice="$699" />
+        <Card hot="HOT" product="iphone 6" price="$499" discountedPrice="$599" />
+        <Card hot="HOT" product="iphone 7" price="$599" discountedPrice="$699" />
         <Card product="iphone 9" price="$699" discountedPrice="$799" />
         <Card product="iphone 10" price="$799" discountedPrice="$899" />
       </div>
