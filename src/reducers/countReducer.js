@@ -1,8 +1,8 @@
-const color = (state = 0, action) => {
+const countReducer = (state = 0, action) => {
     switch (action.type) {
-        case "INCREASE":
+        case 'INCREASE':
             return state + 1
-        case "DECREASE":
+        case 'DECREASE':
             if (state <= 0) {
                 return state
             }
@@ -14,4 +14,4 @@ const color = (state = 0, action) => {
     }
 }
 
-export default color
+export default countReducer

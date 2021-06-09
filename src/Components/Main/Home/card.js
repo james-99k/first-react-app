@@ -1,23 +1,31 @@
 import React from 'react'
 import './card.scss'
-import Macbook from './50061505_575246.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-function card(props) {
+const Card = () => {
+    const products = useSelector((state) => state.product.products)
+    const renderList = products.map((products) => {
+    const { id, hot, img, title, price, originalPrice } = products
     return (
-        <div>
+
+        <Link to="/product" >
+            <div>
             <div className="card" onclick="location.href='product-page.html'">
                 <div className="card__top">
-                    <div className="card__top--hot"><p>{props.hot}</p></div>
+                    <div className="card__top--hot"><p>{hot}</p></div>
                     <div className="card__top--image">
-                        <img className="product-img" src={Macbook} alt="Logo" />
-                        {/* <FontAwesomeIcon className="heart" icon={faHeart} />
-                        <FontAwesomeIcon className="cart" icon={faShoppingCart} /> */}
+                        <img className="product-img" src={img} alt="Logo" />
+                    </div>
+                    <div className="card__top--back">
+                        <div className="circle"><FontAwesomeIcon className="heart" icon={faHeart} /></div>
+                        <div className="circle"><FontAwesomeIcon className="cart" icon={faShoppingCart} /></div>
                     </div>
                 </div>
                 <div className="card__title">
-                    {props.product}
+                    {title}
                 </div>
                 <div className="card__rating">
                     <FontAwesomeIcon className="star" icon={faStar} />
@@ -28,15 +36,19 @@ function card(props) {
                 </div>
                 <div className="card__price">
                     <div className="card__price--discounted">
-                        {props.price}
+                        {price}
                     </div>
                     <div className="card__price--original">
-                        {props.discountedPrice}
+                        {originalPrice}
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
+        </Link>
+    )
+})
+    return (
+        <>{renderList}</>
     )
 }
-
-export default card
+export default Card

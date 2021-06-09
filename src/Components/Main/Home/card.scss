@@ -34,14 +34,14 @@ $black: #000000;
 .card {
     position: relative;
     flex: 1;
-    max-width: 200px;
+    max-width: 230px;
     margin: 10px;
     padding: 2px 0;
     border-radius: 5px;
     box-shadow: 0 0 5px $spindle;
 
     &__top{
-        height: 150px;
+        height: 180px;
 
         &--hot {
             height: 20px;
@@ -59,68 +59,84 @@ $black: #000000;
         }
 
         &--image {
+            position: relative;
+            transform-style: preserve-3d;
             margin: 0 auto;
             padding-bottom: 10px;
-            height: 130px;
+            height: 150px;
             width: 90%;
             background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            bottom: 10px;
             border-bottom: 1px solid $spindle;
     
             .product-img {
                 height: 100%;
                 width: 100%;
             }
-    
-            .heart {
+        }
+
+        &--back {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            transform-style: preserve-3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 2s ease-in-out;
+            gap: 10px;
+
+            .circle {
+                height: 50px;
+                width: 50px;
+                border: 1px solid $dodgerBlue;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+
+                .heart {
                 
-                * {
-                    height: 30px;
-                    width: 30px;
-                    color: $dodgerBlue;
-                    border: 1px solid $dodgerBlue;
-                    border-radius: 50%;
-                    padding-top: 7px;
-                    text-align: center;
-                    margin: 0 10px;
-                    opacity: 0;
-                    visibility: hidden;
+                    * {
+                        height: 30px;
+                        width: 30px;
+                        color: $dodgerBlue;
+                        border: 1px solid $dodgerBlue;
+                        border-radius: 50%;
+                        text-align: center;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
                 }
-            }
-            
-            .cart {
-                *{
-                    height: 30px;
-                    width: 30px;
-                    color: $dodgerBlue;
-                    border: 1px solid $dodgerBlue;
-                    border-radius: 50%;
-                    padding-top: 7px;
-                    text-align: center;
-                    margin: 0 10px;
-                    opacity: 0;
-                    visibility: hidden; 
+                
+                .cart {
+                    *{
+                        height: 30px;
+                        width: 30px;
+                        color: $dodgerBlue;
+                        border: 1px solid $dodgerBlue;
+                        border-radius: 50%;
+                        text-align: center;
+                        opacity: 0;
+                        visibility: hidden; 
+                    }
+                }
+
+                &:hover {
+                    background: $dodgerBlue;
+                    border: transparent;
+
+                    * {
+                        color: $white;
+                    }
                 }
             }
         }
-
-        // .heart {
-        //     *{
-        //         opacity: 1;
-        //         visibility: visible;
-        //         left: 150px;
-        //     }
-        // }
-
-        // .cart {
-        //     *{
-        //         opacity: 1;
-        //         visibility: visible;
-        //     }
-        // }
     }
 
     &__title {
@@ -130,12 +146,15 @@ $black: #000000;
         color: $raisinBlack;
         font-weight: 600;
         font-size: 14px;
+        padding: 0 5px;
+        text-align: center;
+        height: 20px;
     }
 
     &__rating {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 30px;
         height: 10px;
         color: $goldenPoppy;
 
@@ -176,21 +195,37 @@ $black: #000000;
     &:hover {
         cursor: pointer;
         
-        .card__top--image{
-            opacity: 0.5;
-        }
-        
-        .heart {
-            *{
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+        .card__top{
+            
 
-        .cart {
-            *{
+            &--image {
+
+                .product-img{
+                    opacity: 0.5;
+                }
+            }
+
+            &--back {
                 opacity: 1;
-                visibility: visible;
+
+                .circle {
+                    opacity: 1;
+                    visibility: visible;
+
+                    .heart {
+                        *{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+            
+                    .cart {
+                        *{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
             }
         }
     }
