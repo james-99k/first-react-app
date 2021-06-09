@@ -1,5 +1,6 @@
 import React from 'react'
 import './navMain.scss'
+import { Link } from 'react-router-dom'
 
 function navMain() {
     return (
@@ -7,7 +8,7 @@ function navMain() {
         <div class="nav">
             <ul class="nav__links">
                 <li class="nav__links--home">
-                    <a href="index.html">HOME</a>
+                    <a href="/">HOME</a>
                     <div class="mega-box">
                         <div class="mega-box__content">
                             <div class="mega-box__content--column">
