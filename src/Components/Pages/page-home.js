@@ -1,23 +1,31 @@
 import React from 'react'
-import Banner from './Home/banner'
-import Ad from './Home/advertisements.js'
-import Best from './Home/bestSeller.js'
-import Load from './Home/loadMore.js'
-import Banner2 from './Home/banner2.js'
-import Banner3 from './Home/banner3.js';
-import Latest from './Home/latest.js';
-import Featured from './Home/featuredProduct.js';
-import Search from './Home/search.js';
-import CardList from './Home/cardList';
+import NavHeader from '../Header/navHeader'
+import Logo from '../Header/logoHeader'
+import NavMain from '../Main/navMain'
+import Banner from '../Main/Home/banner'
+import Ad from '../Main/Home/advertisements'
+import Best from '../Main/Home/bestSeller'
+import Load from '../Main/Home/loadMore'
+import Banner2 from '../Main/Home/banner2'
+import Banner3 from '../Main/Home/banner3';
+import Latest from '../Main/Home/latest';
+import Featured from '../Main/Home/featuredProduct';
+import Search from '../Main/Home/search';
+import CardList from '../Main/Home/cardList';
 
 const Home = () => {
     return (
         <div>
+            <NavHeader />
+            <Logo />
+            <NavMain />
             <Banner />
             <Ad />
             <Best />
             <CardList />
-            <Load />
+            <div className="container">
+                <Load />
+            </div>
             <Banner2 />
             <Banner3 />
             <h2>Latest News</h2>
