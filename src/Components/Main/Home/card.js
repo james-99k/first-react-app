@@ -36,10 +36,10 @@ const Card = () => {
                         </div>
                         <div className="card__price">
                             <div className="card__price--discounted">
-                                {price}
+                                ${price}
                             </div>
                             <div className="card__price--original">
-                                {originalPrice}
+                                ${originalPrice}
                             </div>
                         </div>
                     </div>
