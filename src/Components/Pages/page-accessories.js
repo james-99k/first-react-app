@@ -27,17 +27,17 @@ const Accessories = () => {
     const renderList = fakeProducts.map((products) => {
         const { image, title, price, description } = products
         return (
-            <div class="accessories-list">
-                <div class="accessories-list__left">
-                    <div class="accessories-list__left--image" onclick="location.href='product-page.html'">
+            <div class="fakeProduct">
+                <div class="fakeProduct__left">
+                    <div class="fakeProduct__left--image" onclick="location.href='product-page.html'">
                         <img src={image} alt="" />
                     </div>
                 </div>
-                <div class="accessories-list__right">
-                    <div class="accessories-list__right--title">
+                <div class="fakeProduct__right">
+                    <div class="fakeProduct__right--title">
                         {title}
                     </div>
-                    <div class="accessories-list__right--review">
+                    <div class="fakeProduct__right--review">
                         <div class="rating">
                             <i class="fas fa-star rating__star"></i>
                             <i class="fas fa-star rating__star"></i>
@@ -52,17 +52,17 @@ const Accessories = () => {
                             <a href="#">Submit a review</a>
                         </div>
                     </div>
-                    <div class="accessories-list__right--price">
+                    <div class="fakeProduct__right--price">
                         <div class="discounted">
                             ${price}
                         </div>
                         <div class="original">
                         </div>
                     </div>
-                    <div class="accessories-list__right--details">
+                    <div class="fakeProduct__right--details">
                         {description}
                     </div>
-                    <div class="accessories-list__right--buttons">
+                    <div class="fakeProduct__right--buttons">
                         <div class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
                             <span>Add To Cart</span>

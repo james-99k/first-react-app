@@ -34,8 +34,6 @@ const Store = () => {
                     <Banner />
                     <Filter />
                     <Product />
-                    <Product />
-                    <Product />
                     <Page />
                 </div>
             </div>

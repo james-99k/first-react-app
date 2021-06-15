@@ -1,12 +1,15 @@
 import React from 'react'
 import './page-product.scss'
+import macbook from '../../reducers/Images/macbook.png'
 import GoPro from '../Main/Home/Oculus-Rift.png'
 import NavHeader from '../Header/navHeader'
 import Logo from '../Header/logoHeader'
 import NavMain from '../Main/navMain'
 import History from '../Main/Store/historyTab'
 import CardProduct from '../Main/Product/cardProduct'
-import Card from '../Main/Home/card'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart, faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons'
+import CardList from '../Main/Home/cardList'
 
 const Product = () => {
     return (
@@ -25,11 +28,11 @@ const Product = () => {
                             BEST SELLER
                 </div>
                     </div>
-                    {/* <div className="card" >
+                    <div className="card" >
                         <div className="card__top">
-                            <div className="card__top--hot"><p>{hot}</p></div>
+                            <div className="card__top--hot"><p>Hot</p></div>
                             <div className="card__top--image">
-                                <img className="product-img" src={img} alt="Logo" />
+                                <img className="product-img" src={macbook} alt="Logo" />
                             </div>
                             <div className="card__top--back">
                                 <div className="circle"><FontAwesomeIcon className="heart" icon={faHeart} /></div>
@@ -37,7 +40,7 @@ const Product = () => {
                             </div>
                         </div>
                         <div className="card__title">
-                            {title}
+                            Macbook
                         </div>
                         <div className="card__rating">
                             <FontAwesomeIcon className="star" icon={faStar} />
@@ -48,13 +51,13 @@ const Product = () => {
                         </div>
                         <div className="card__price">
                             <div className="card__price--discounted">
-                                {price}
+                                $499
                             </div>
                             <div className="card__price--original">
-                                {originalPrice}
+                                $599
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div class="slider">
                         slider
@@ -80,6 +83,7 @@ const Product = () => {
             <div class="related-products">
                 <h1>RELATED PRODUCT</h1>
             </div>
+            <CardList />
         </div>
     )
 }

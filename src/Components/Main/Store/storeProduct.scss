@@ -20,7 +20,9 @@ $goldenPoppy: #FFC600;
             align-items: center;
 
             img {
-                width: 180px;
+                height: 90%;
+                width: 90%;
+                object-fit: contain;
             }
 
             &:hover {

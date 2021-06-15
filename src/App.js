@@ -9,11 +9,13 @@ import NavFooter from './Components/Footer/navFooter';
 import Payment from './Components/Footer/payment';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Accessories from './Components/Pages/page-accessories';
+import NewsLetter from './Components/Main/newsLetter';
 
 
 function App() {
   return (
     <div>
+      <NewsLetter />
       <Router>
         <Switch>
           <Route path="/signin" exact component={SignIn} />
@@ -25,7 +27,7 @@ function App() {
           {/* <Route>404 Not Found</Route>   */}
         </Switch>
       </Router>
-      
+
       <Detail />
       <NavFooter />
       <Payment />
