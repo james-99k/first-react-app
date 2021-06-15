@@ -3,9 +3,9 @@ import './page-product.scss'
 import GoPro from '../Main/Home/Oculus-Rift.png'
 import NavHeader from '../Header/navHeader'
 import Logo from '../Header/logoHeader'
-import NavMain from './navMain'
-import History from './Store/historyTab'
-import CardProduct from './Product/cardProduct'
+import NavMain from '../Main/navMain'
+import History from '../Main/Store/historyTab'
+import CardProduct from '../Main/Product/cardProduct'
 import Card from '../Main/Home/card'
 
 const Product = () => {
@@ -25,7 +25,7 @@ const Product = () => {
                             BEST SELLER
                 </div>
                     </div>
-                    <div className="card" >
+                    {/* <div className="card" >
                         <div className="card__top">
                             <div className="card__top--hot"><p>{hot}</p></div>
                             <div className="card__top--image">
@@ -54,7 +54,7 @@ const Product = () => {
                                 {originalPrice}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div class="slider">
                         slider

@@ -1,13 +1,14 @@
 import './App.css';
-import SignIn from './Components/Main/page-signIn'
-import SignUp from './Components/Main/page-signUp'
-import Home from './Components/Main/page-home'
-import Product from './Components/Main/page-product'
-import Store from './Components/Main/page-store'
+import SignIn from './Components/Pages/page-signIn'
+import SignUp from './Components/Pages/page-signUp'
+import Home from './Components/Pages/page-home'
+import Product from './Components/Pages/page-product'
+import Store from './Components/Pages/page-store'
 import Detail from './Components/Footer/detail';
 import NavFooter from './Components/Footer/navFooter';
 import Payment from './Components/Footer/payment';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Accessories from './Components/Pages/page-accessories';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/product" exact component={Product} />
           <Route path="/store" exact component={Store} />
+          <Route path="/accessories" exact component={Accessories} />
           {/* <Route>404 Not Found</Route>   */}
         </Switch>
       </Router>

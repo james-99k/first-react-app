@@ -1,17 +1,17 @@
 import React from 'react'
 import NavHeader from '../Header/navHeader'
 import Logo from '../Header/logoHeader'
-import NavMain from './navMain'
-import Banner from './Home/banner'
-import Ad from './Home/advertisements'
-import Best from './Home/bestSeller'
-import Load from './Home/loadMore'
-import Banner2 from './Home/banner2'
-import Banner3 from './Home/banner3';
-import Latest from './Home/latest';
-import Featured from './Home/featuredProduct';
-import Search from './Home/search';
-import CardList from './Home/cardList';
+import NavMain from '../Main/navMain'
+import Banner from '../Main/Home/banner'
+import Ad from '../Main/Home/advertisements'
+import Best from '../Main/Home/bestSeller'
+import Load from '../Main/Home/loadMore'
+import Banner2 from '../Main/Home/banner2'
+import Banner3 from '../Main/Home/banner3';
+import Latest from '../Main/Home/latest';
+import Featured from '../Main/Home/featuredProduct';
+import Search from '../Main/Home/search';
+import CardList from '../Main/Home/cardList';
 
 const Home = () => {
     return (

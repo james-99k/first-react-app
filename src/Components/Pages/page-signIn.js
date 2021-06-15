@@ -1,7 +1,7 @@
 import React from 'react'
 import './page-signIn.scss'
-import Logo from './Authentication/logo'
-import SignIn from './Authentication/signIn'
+import Logo from '../Main/Authentication/logo'
+import SignIn from '../Main/Authentication/signIn'
 
 const signIn = () => {
     return (

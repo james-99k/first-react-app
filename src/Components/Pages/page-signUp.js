@@ -1,7 +1,7 @@
 import React from 'react'
 import './page-signUp.scss'
-import Logo from './Authentication/logo'
-import SignUp from './Authentication/signUp'
+import Logo from '../Main/Authentication/logo'
+import SignUp from '../Main/Authentication/signUp'
 
 const signUp = () => {
     return (
