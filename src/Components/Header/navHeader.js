@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function navHeader() {
     return (
@@ -27,9 +28,11 @@ function navHeader() {
                 </ul>
             </div>
             <div class="navHeader__right">
-                <button class="navHeader__right--profile" onclick="location.href='sign-in.html'">
-                    <FontAwesomeIcon icon={faUser} /> Sign in
+                <Link to="/signin">
+                    <button class="navHeader__right--profile" >
+                        <FontAwesomeIcon icon={faUser} /> Sign in
                 </button>
+                </Link>
                 <button class="navHeader__right--cart" onclick="location.href='checkout-page.html'">
                     <FontAwesomeIcon icon={faShoppingBasket} />
                     <input class="navHeader__right--cart-count" type="number" value="0" disabled />

@@ -3,7 +3,7 @@ import './prodColor.scss'
 
 function prodColor() {
     return (
-        <div class="color">
+        <div class="color-product">
             <h5>Select Color</h5>
             <div class="choices">
                 <div class="black active"
