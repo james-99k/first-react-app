@@ -83,6 +83,7 @@ $goldenPoppy: #FFC600;
         &--details {
             padding: 10px 0;
             font-size: 13px;
+            text-overflow: ellipsis;
         }
 
         &--buttons {
@@ -93,6 +94,7 @@ $goldenPoppy: #FFC600;
                 padding: 10px 20px;
                 border-radius: 6px;
                 background: #cee5faf6;
+                border: none;
 
                 i {
                     padding-right: 10px;
@@ -123,6 +125,7 @@ $goldenPoppy: #FFC600;
                 background: #cee5faf6;
                 color: $dodgerBlue;
                 margin: 0 20px;
+                border: none;
 
                 i {
                     color: $dodgerBlue;

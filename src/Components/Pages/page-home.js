@@ -12,10 +12,12 @@ import Latest from '../Main/Home/latest';
 import Featured from '../Main/Home/featuredProduct';
 import Search from '../Main/Home/search';
 import CardList from '../Main/Home/cardList';
+import NewsLetter from '../Main/newsLetter'
 
 const Home = () => {
     return (
         <div>
+            <NewsLetter />
             <NavHeader />
             <Logo />
             <NavMain />

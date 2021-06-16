@@ -6,7 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-function navHeader() {
+function navHeader(props) {
     return (
         <div className="navHeader">
             <div className="navHeader__left">
@@ -35,7 +35,8 @@ function navHeader() {
                 </Link>
                 <button class="navHeader__right--cart" onclick="location.href='checkout-page.html'">
                     <FontAwesomeIcon icon={faShoppingBasket} />
-                    <input class="navHeader__right--cart-count" type="number" value="0" disabled />
+                    {/* <input class="navHeader__right--cart-count" type="number" value="0" disabled /> */}
+                    <span>{props.product}</span>
                     <span>Items</span>
                 </button>
                 <span class="navHeader__right--total">
