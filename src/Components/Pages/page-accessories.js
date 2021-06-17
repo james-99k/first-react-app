@@ -96,9 +96,11 @@ import fakeProduct from '../Fake-Product/fakeProductContainer'
 import { connect } from 'react-redux'
 import { addProducts } from '../../actions/productAction'
 
-const mapStateToProps = state => ({
-    product:state.addToCartReducer
-})
+const mapStateToProps = state => {
+    return {
+        products: state.addToCartReducer.products,
+    }
+}
 
 const mapDispatchToProps = dispatch => ({
     addToCartHandler: product =>dispatch(addProducts(product))

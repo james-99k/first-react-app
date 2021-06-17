@@ -12,8 +12,9 @@ import Banner from '../Main/Store/banner'
 import Filter from '../Main/Store/filter'
 import Product from '../Main/Store/storeProduct'
 import Page from '../Main/Store/pageTab'
+import { connect } from 'react-redux'
 
-const Store = () => {
+const Store = ({ products }) => {
     return (
         <div>
             <NavHeader />
@@ -33,7 +34,9 @@ const Store = () => {
                 <div className="right-store">
                     <Banner />
                     <Filter />
-                    <Product />
+                    {products.map(product => {
+                        <Product key={product.id} productData={product}/>
+                    })}
                     <Page />
                 </div>
             </div>
@@ -41,4 +44,10 @@ const Store = () => {
     )
 }
 
-export default Store
+const mapStateToProps = state => {
+    return {
+        products: state.addToCart.products,
+    }
+}
+
+export default connect(mapStateToProps)(Store)
